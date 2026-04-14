@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "4000:4000"
+    depends_on:
+      - product-service
+      - order-service
+
+  product-service:
+    build: ./product-service
+    mem_limit: 80m
+    cpus: 0.2
+
+  order-service:
+    build: ./order-service
+
+  auth-service:
+    build: ./auth-service
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: password

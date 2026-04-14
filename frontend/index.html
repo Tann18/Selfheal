@@ -1,0 +1,18 @@
+<h1>E-commerce App</h1>
+
+<button onclick="loadProducts()">Load Products</button>
+<button onclick="loadOrders()">Load Orders</button>
+
+<script>
+async function loadProducts() {
+  const res = await fetch('http://localhost:4000/products');
+  const data = await res.json();
+  console.log("Products:", data);
+}
+
+async function loadOrders() {
+  const res = await fetch('http://localhost:4000/orders');
+  const data = await res.json();
+  console.log("Orders:", data);
+}
+</script>
