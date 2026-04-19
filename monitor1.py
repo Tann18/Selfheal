@@ -6,7 +6,7 @@ from sklearn.ensemble import IsolationForest
 import numpy as np
 
 # =========================
-# CONFIGURATION
+# CONFIGURATIONS
 # =========================
 API = "http://localhost:4000/products"
 
