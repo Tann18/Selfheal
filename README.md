@@ -174,9 +174,9 @@ minikube service api-gateway
 ## Team
 
 - Tanmay Das  
-- [Teammate 1]  
-- [Teammate 2]  
-- [Teammate 3]  
+- Arin Pattnaik
+- Dhruv Agarwal 
+- Ansh Jain
 
 ---
 
